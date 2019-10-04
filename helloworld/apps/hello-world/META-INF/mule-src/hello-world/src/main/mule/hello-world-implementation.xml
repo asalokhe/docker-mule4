@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<flow name="hello-world-implementationFlow" doc:id="49f14121-2648-4817-8d94-7661524d9442" >
+		<http:listener doc:name="/api/hello" doc:id="cfff6e10-c632-4a3e-9789-ccb9b3d7cf16" config-ref="HTTP_Listener_config" path="/api/hello"/>
+		<logger level="INFO" doc:name="Log Info" doc:id="b1fdc4a7-17cf-4d55-90b7-e97b6512e4fe" message='#[%dw 2.0
+output application/json
+---
+{
+	"StepName": "Log Info"
+}]'/>
+		<logger level="DEBUG" doc:name="Log Debug" doc:id="a10696d7-e3f7-4f2a-a2b3-8adbe6d2225e" message='#[%dw 2.0
+output application/json
+---
+{
+	"StepName": "Log Debug"
+}]'/>
+		<logger level="ERROR" doc:name="Log Error" doc:id="c76ad614-df7e-460d-b34a-68d9e5d17259" message='#[%dw 2.0
+output application/json
+---
+{
+	"StepName": "Log Error"
+}]'/>
+		<logger level="TRACE" doc:name="Log Trace" doc:id="7669fff8-1448-4d5d-a6ba-08c504e5fc11" message='#[%dw 2.0
+output application/json
+---
+{
+	"StepName": "Log Trace"
+}]'/>
+		<logger level="WARN" doc:name="Log Warn" doc:id="83f72e40-a73b-404d-97cc-b344d8d48deb" message='#[%dw 2.0
+output application/json
+---
+{
+	"StepName": "Log Warning"
+}]'/>
+		<set-payload value='#[%dw 2.0
+output application/json
+---
+{
+	"Message": "Hi From Hello-World App"
+}]' doc:name="Set Response Payload" doc:id="4e9e90bf-705d-4f8c-9f2b-a6a1bbe49d80" />
+	</flow>
+</mule>

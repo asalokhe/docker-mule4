@@ -1,0 +1,54 @@
+INFO  2019-10-04 11:21:01,359 [WrapperListener_start_runner] [event: ] org.mule.runtime.api.message.AbstractMuleMessageBuilderFactory: Loaded MuleMessageBuilderFactory implementation 'org.mule.runtime.core.internal.message.DefaultMessageBuilderFactory' from classloader 'org.mule.runtime.module.reboot.internal.MuleContainerSystemClassLoader@448a3bbc'
+INFO  2019-10-04 11:21:01,380 [WrapperListener_start_runner] [event: ] org.mule.runtime.api.el.AbstractBindingContextBuilderFactory: Loaded BindingContextBuilderFactory implementation 'org.mule.runtime.core.api.el.DefaultBindingContextBuilderFactory' from classloader 'org.mule.runtime.module.reboot.internal.MuleContainerSystemClassLoader@448a3bbc'
+INFO  2019-10-04 11:21:01,539 [WrapperListener_start_runner] [event: ] org.mule.runtime.core.internal.util.journal.TransactionJournal: Using files for tx logs /opt/mule-standalone-4.2.1/./.mule/hello-world/queue-tx-log/tx1.log and /opt/mule-standalone-4.2.1/./.mule/hello-world/queue-tx-log/tx2.log
+INFO  2019-10-04 11:21:01,545 [WrapperListener_start_runner] [event: ] org.mule.runtime.core.internal.util.journal.TransactionJournal: Using files for tx logs /opt/mule-standalone-4.2.1/./.mule/hello-world/queue-xa-tx-log/tx1.log and /opt/mule-standalone-4.2.1/./.mule/hello-world/queue-xa-tx-log/tx2.log
+INFO  2019-10-04 11:21:02,031 [WrapperListener_start_runner] [event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Initialising Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-HTTP_Listener_config
+INFO  2019-10-04 11:21:02,175 [WrapperListener_start_runner] [event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Initialising flow: hello-world-implementationFlow
+INFO  2019-10-04 11:21:02,221 [WrapperListener_start_runner] [event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Initialising Bean: listener
+INFO  2019-10-04 11:21:02,508 [WrapperListener_start_runner] [event: ] org.mule.runtime.core.internal.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2019-10-04 11:21:02,508 [WrapperListener_start_runner] [event: ] org.mule.runtime.core.internal.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2019-10-04 11:21:02,511 [WrapperListener_start_runner] [event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Starting Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-HTTP_Listener_config
+INFO  2019-10-04 11:21:02,547 [WrapperListener_start_runner] [event: ] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Starting flow: hello-world-implementationFlow
+INFO  2019-10-04 11:21:02,713 [WrapperListener_start_runner] [event: ] org.mule.runtime.core.privileged.lifecycle.AbstractLifecycleManager: Starting Bean: listener
+INFO  2019-10-04 11:21:02,731 [WrapperListener_start_runner] [event: ] org.mule.runtime.core.internal.logging.LogUtil: 
+**********************************************************************
+* Application: hello-world                                           *
+* OS encoding: UTF-8, Mule encoding: UTF-8                           *
+*                                                                    *
+**********************************************************************
+INFO  2019-10-04 11:23:53,874 [[MuleRuntime].cpuLight.04: [hello-world].hello-world-implementationFlow.CPU_LITE @2c5478a6] [event: 70a81840-e699-11e9-a515-0242ac110002] org.mule.runtime.core.internal.processor.LoggerMessageProcessor: {
+  "StepName": "Log Info"
+}
+ERROR 2019-10-04 11:23:53,884 [[MuleRuntime].cpuLight.04: [hello-world].hello-world-implementationFlow.CPU_LITE @2c5478a6] [event: 70a81840-e699-11e9-a515-0242ac110002] org.mule.runtime.core.internal.processor.LoggerMessageProcessor: {
+  "StepName": "Log Error"
+}
+WARN  2019-10-04 11:23:53,890 [[MuleRuntime].cpuLight.04: [hello-world].hello-world-implementationFlow.CPU_LITE @2c5478a6] [event: 70a81840-e699-11e9-a515-0242ac110002] org.mule.runtime.core.internal.processor.LoggerMessageProcessor: {
+  "StepName": "Log Warning"
+}
+INFO  2019-10-04 11:24:13,492 [[MuleRuntime].cpuLight.04: [hello-world].hello-world-implementationFlow.CPU_LITE @2c5478a6] [event: 7e4d7120-e699-11e9-a515-0242ac110002] org.mule.runtime.core.internal.processor.LoggerMessageProcessor: {
+  "StepName": "Log Info"
+}
+ERROR 2019-10-04 11:24:13,494 [[MuleRuntime].cpuLight.04: [hello-world].hello-world-implementationFlow.CPU_LITE @2c5478a6] [event: 7e4d7120-e699-11e9-a515-0242ac110002] org.mule.runtime.core.internal.processor.LoggerMessageProcessor: {
+  "StepName": "Log Error"
+}
+WARN  2019-10-04 11:24:13,497 [[MuleRuntime].cpuLight.04: [hello-world].hello-world-implementationFlow.CPU_LITE @2c5478a6] [event: 7e4d7120-e699-11e9-a515-0242ac110002] org.mule.runtime.core.internal.processor.LoggerMessageProcessor: {
+  "StepName": "Log Warning"
+}
+INFO  2019-10-04 11:24:24,499 [[MuleRuntime].cpuLight.04: [hello-world].hello-world-implementationFlow.CPU_LITE @2c5478a6] [event: 84dcfa10-e699-11e9-a515-0242ac110002] org.mule.runtime.core.internal.processor.LoggerMessageProcessor: {
+  "StepName": "Log Info"
+}
+ERROR 2019-10-04 11:24:24,500 [[MuleRuntime].cpuLight.04: [hello-world].hello-world-implementationFlow.CPU_LITE @2c5478a6] [event: 84dcfa10-e699-11e9-a515-0242ac110002] org.mule.runtime.core.internal.processor.LoggerMessageProcessor: {
+  "StepName": "Log Error"
+}
+WARN  2019-10-04 11:24:24,503 [[MuleRuntime].cpuLight.04: [hello-world].hello-world-implementationFlow.CPU_LITE @2c5478a6] [event: 84dcfa10-e699-11e9-a515-0242ac110002] org.mule.runtime.core.internal.processor.LoggerMessageProcessor: {
+  "StepName": "Log Warning"
+}
+INFO  2019-10-04 11:25:07,362 [[MuleRuntime].cpuLight.04: [hello-world].hello-world-implementationFlow.CPU_LITE @2c5478a6] [event: 9e6932f0-e699-11e9-a515-0242ac110002] org.mule.runtime.core.internal.processor.LoggerMessageProcessor: {
+  "StepName": "Log Info"
+}
+ERROR 2019-10-04 11:25:07,363 [[MuleRuntime].cpuLight.04: [hello-world].hello-world-implementationFlow.CPU_LITE @2c5478a6] [event: 9e6932f0-e699-11e9-a515-0242ac110002] org.mule.runtime.core.internal.processor.LoggerMessageProcessor: {
+  "StepName": "Log Error"
+}
+WARN  2019-10-04 11:25:07,365 [[MuleRuntime].cpuLight.04: [hello-world].hello-world-implementationFlow.CPU_LITE @2c5478a6] [event: 9e6932f0-e699-11e9-a515-0242ac110002] org.mule.runtime.core.internal.processor.LoggerMessageProcessor: {
+  "StepName": "Log Warning"
+}
