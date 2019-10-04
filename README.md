@@ -29,6 +29,8 @@ Image built in the above step can run a mule standalone server. To run a specifi
         docker run --name <<NameURContainer> -p <<hostport>>/<<TargetPort>> -v <<host path to mount>>/<<Target dir path to mount>> <<imageID/RepositoryName>>
     Example : 
         docker run -it --name mymulecontainer -p 80:8081 -v /home/anup/docker/mule/apps/is:/opt/mule/apps -v /home/anup/docker/mule/logs:/opt/mule/logs salokheanup/mule4
+    Example for Windows:
+        docker run -it --name salokheanup/mule4 -p 80:8081 -v C:/Docker/helloworld/apps:/opt/mule/apps -v C:/Docker/helloworld/logs:/opt/mule/logs salokheanup/mule4
     
     - Application expected to run in the container needs to be present in the below folder which is mounted during runtime. "/home/anup/docker_samples/mule/muledockerdemo/myapps/is".
     - Application and domain logs will be stored in the mount point. "/home/anup/docker_samples/mule/muledockerdemo/logs"
