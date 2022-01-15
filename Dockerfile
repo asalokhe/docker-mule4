@@ -2,7 +2,7 @@
 # Based on:  java:8u111-jre and Java 8 is the basic requirement to run mule 3.9 version (https://docs.mulesoft.com/mule-runtime/3.9/hardware-and-software-requirements)
 
 FROM                    java:8u111-jre
-MAINTAINER              Anup Salokhe (anup.salokhe@devoteam.com)
+MAINTAINER              Anup Salokhe (salokheanup@gmail.com)
 
 # Mule installation:
 
